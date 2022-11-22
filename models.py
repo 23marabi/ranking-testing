@@ -17,7 +17,7 @@ class MatchResult():
         return "Match #" + str(self.match_num) + " Team #" + str(self.team_num)
 
     def results(self):
-        return "Results -\nMatch #" + str(self.match_num) + "\nTeam #" + str(self.team_num) + "\nAuto Score: " + str(self.auto_score) + "\nTeleop Score: " + str(self.teleop_score) + "\nEndgame Time: " + time.strftime("%M:%S", self.endgame_time) + "\nPenalty: " + str(self.penalty)
+        return "Results -\nMatch #" + str(self.match_num) + "\nTeam #" + str(self.team_num) + "\nAuto Score: " + str(self.auto_score) + "\nTeleop Score: " + str(self.teleop_score) + "\nEndgame Time: " + "\nPenalty: " + str(self.penalty)
 
     def array(self):
         return array([self.auto_score, self.teleop_score, self.endgame_time, self.penalty])
