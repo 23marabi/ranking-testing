@@ -1,5 +1,6 @@
 import time
 from numpy import array
+from enum import Enum
 
 class MatchResult():
     rank = 0.0 # ranking score
@@ -21,3 +22,9 @@ class MatchResult():
 
     def array(self):
         return array([self.auto_score, self.teleop_score, self.endgame_time, self.penalty])
+
+class MatchValues(Enum):
+    AutoScore = 0
+    TeleopScore = 1
+    EndgameTime = 2
+    Penalties = 3
